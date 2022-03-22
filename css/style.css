@@ -69,6 +69,10 @@ header nav div ul li {
     font-weight: bold;
 }
 
+.container__hero__texto h1 {
+    font-weight: bold;
+}
+
 .container__hero__imagen {
     width: 22rem;
     height: 11rem;
@@ -234,14 +238,14 @@ footer {
 
 .container__llevameHaciaArriba {
     position: fixed;
-    right: 1rem;
-    bottom: 6.5rem;
+    right: 0.9rem;
+    bottom: 5.5rem;
     background-color: transparent;
 }
 
 .boton__llevamehaciaarriba {
     border: none;
-    font-size: 60px;
+    font-size: 50px;
     background-color: transparent;
 }
 
@@ -258,7 +262,7 @@ footer {
 
 .boton__whatsapp {
     border: none;
-    font-size: 90px;
+    font-size: 75px;
     background-color: transparent;
 }
 
@@ -315,14 +319,79 @@ footer {
     background-color: white;
 }
 
-/*contacto*/
+/*Contacto*/
+
+.container__pagina__contacto {
+    padding: 1rem 0;
+}
 
 .container__pagina__contacto__1 {
     color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem 0;
+    font-weight: bold;
 }
 
 .container__pagina__contacto__2 {
     color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.icono__facebook__contacto {
+    color: white;
+}
+
+.icono__instagram__contacto {
+    color: white;
+}
+
+/*Quienes Somos*/
+
+.container__pagina__quienessomos {
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto__quienessomos {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+.container__imagen__quienessomos {
+    margin: 1rem 0;
+}
+
+/*Carrito*/
+
+.container__parrafo__carrito {
+    background-color: aqua;
+}
+
+.parrafo__carrito {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container__boton__carrito {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.boton__carrito {
+    font-size: large;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 1px solid color black;
+    border-radius: 15px;
+    background-color: white;
 }
 
 /*media destock*/
@@ -384,8 +453,8 @@ footer {
         font-weight: bold;
     }
 
-    .container__todosLosProductos {
-        transition: all 0.5s;
+    .boton__todosLosProductos {
+        transition: all 0.25s;
     }
 
     .container__data {
@@ -453,16 +522,58 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        
         flex-wrap: wrap;
     }
 
     .container__fotoproducto__infoproducto__paginaproductos {
         width: 15rem;
         height: 15rem;
+        transition: all 0.5s;
     }
 
-    /*animaciones index*/
+    .boton__mostrarmas {
+        transition: all 0.25s;
+    }
+
+    /*contacto*/
+
+    .container__pagina__contacto__1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container__pagina__contacto__2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: start;
+    }
+
+    /*Quienes Somos*/
+
+    .texto__quienessomos {
+        font-size: medium;
+    }
+
+    .container__imagen__quienessomos {
+        width: 50%;
+        margin: 2rem 0;
+    }
+
+    /*Carrito*/
+    
+    .container__boton__carrito {
+        text-align: start;
+    }
+
+    .boton__carrito {
+        transition: all 0.25s;
+    }
+
+
+    /*animaciones*/
+
+    /*Index*/
 
     .container__logo__manonimotorep:hover {
         transform: scale(1.1);
@@ -484,9 +595,9 @@ footer {
         transition: all 0.5s;
     }
 
-    .container__todosLosProductos:hover {
-        transform: scale(1.1);
-        transition: all 0.5s;
+    .boton__todosLosProductos:hover {
+        background-color: #CDCDCD;
+        transition: all 0.25s;
     }
 
     .boton__form__index:hover {
@@ -502,6 +613,25 @@ footer {
     .container__whatsapp:hover {
         transform: scale(1.1);
         transition: all 0.5s;
+    }
+
+    /*Productos*/
+
+    .container__fotoproducto__infoproducto__paginaproductos:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+    }
+
+    .boton__mostrarmas:hover {
+        background-color: #CDCDCD;
+        transition: all 0.25s;
+    }
+
+    /*Carrito*/
+
+    .boton__carrito:hover {
+        background-color: #CDCDCD;
+        transition: all 0.25s;
     }
 
 }
